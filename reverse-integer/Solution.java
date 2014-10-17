@@ -15,9 +15,8 @@ public class Solution {
         }
         
         int s = 0;
-        for(i = len - 1; i >=0 ; i--)
-            s += y[i] * Math.pow(10, len - 1 - i);
-        
+        for(i = 0; i < len - 1; i++)
+              s = s * 10 + y[i];
         return s;
     }
 }
